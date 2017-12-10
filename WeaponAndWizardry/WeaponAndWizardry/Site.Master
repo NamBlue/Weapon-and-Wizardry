@@ -81,7 +81,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> MA's Weapon & Wizardry</p>
+                <p>&copy; <%: DateTime.Now.Year %> MA's Weapon & Wizardry - <a target="_blank" href="https://goo.gl/forms/UMUO742CkbbTjIRQ2"> If you want to leave surver please click here. </a> </p>
             </footer>
         </div>
     </form>
