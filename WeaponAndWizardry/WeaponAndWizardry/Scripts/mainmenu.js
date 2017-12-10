@@ -1,4 +1,5 @@
-﻿openSoundPlayer();
+﻿//Author: Jia Qi Lee (George) Date: 2017-12-08
+openSoundPlayer();
 
 localStorage.setItem("soundLoaded", "false");
 var soundLoaded = localStorage.getItem("soundLoaded");
@@ -11,7 +12,7 @@ var interval = setInterval(checkIfLoadCompleted, 1000);
 
 function checkIfLoadCompleted() {
     elapsed++;
-    if (soundLoaded === "true" || elapsed > 5) {
+    if (soundLoaded === "true" || elapsed > 10) {
         clearInterval(interval);
         document.getElementById('interactive');
         document.getElementById('load').style.visibility = "hidden";
@@ -20,7 +21,7 @@ function checkIfLoadCompleted() {
     }
     else {
         soundLoaded = localStorage.getItem("soundLoaded");
-        percentText.innerHTML = Number(localStorage.getItem("percentLoaded")) + (elapsed * 10);
+        percentText.innerHTML = Number(localStorage.getItem("percentLoaded")) + (elapsed * 5);
         console.log("Loading sounds...");
 
     }
