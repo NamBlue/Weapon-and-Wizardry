@@ -74,7 +74,7 @@ namespace WeaponAndWizardry
         /// <param name="e"></param>
         protected void Button_Quit_Click(object sender, EventArgs e)
         {
-            SessionHandler.GameEngine.QuitGame(this);
+            Response.Redirect("QuitGame.aspx");
         }
 
         /// <summary>
@@ -85,7 +85,7 @@ namespace WeaponAndWizardry
         protected void Button_Save_Click(object sender, EventArgs e)
         {
             Save save = SessionHandler.GameEngine.SaveGame();
-            ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('Sucess! Your Password is: " + save.Id + "');", true);            
+            ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('Sucess! Your Password is: " + save.Id + "');", true);
         }
 
         /// <summary>
