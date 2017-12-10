@@ -403,6 +403,7 @@
     </Content>
     <Content Include="Scripts\jquery.signalR-2.1.2.js" />
     <Content Include="Scripts\jquery.signalR-2.1.2.min.js" />
+    <Content Include="Scripts\mainmenu.js" />
     <Content Include="Scripts\soundplayer.js" />
     <Content Include="Scripts\sounds.js" />
     <EntityDeploy Include="Models\SaveDataModel.edmx">

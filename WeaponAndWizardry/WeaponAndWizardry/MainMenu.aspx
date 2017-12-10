@@ -12,7 +12,7 @@
             N/A
     -->
     <div id="load">
-        <p id="loadingText">Loading...<span id ="percentText">0</span>%</p>
+        <p id="loadingText">Loading...<span id="percentText">0</span>%</p>
     </div>
     <div id="contents">
 
@@ -22,37 +22,7 @@
                     <img alt="logo" longdesc="MA's Weapons&amp;Wizardry" src="Content/Images/ui/logo_3.png" style="width: 100%;" />
                 </div>
             </div>
-            <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-            <script>
-                sound = window.open("SoundPlayer.html", "name", "height=400,width=500");
-                sound.blur();
-                localStorage.setItem("soundLoaded", "false");
-                var soundLoaded = localStorage.getItem("soundLoaded");
-                var elapsed = 0;
-                var percentText = document.getElementById('percentText');
-                localStorage.setItem("percentLoaded", Number(percentText.innerHTML));
-                document.getElementById('contents').style.visibility = "hidden";
-                var interval = setInterval(checkIfLoadCompleted, 1000);
-                function checkIfLoadCompleted()
-                {
-                    if(soundLoaded === "true" || elapsed == 5)
-                    {
-                        clearInterval(interval);
-                        document.getElementById('interactive');
-                        document.getElementById('load').style.visibility = "hidden";
-                        document.getElementById('contents').style.visibility = "visible";
-                        console.log("Load complete!");
-                    }
-                    else
-                    {
-                        soundLoaded = localStorage.getItem("soundLoaded");
-                        percentText.innerHTML = localStorage.getItem("percentLoaded");
-                        console.log("Loading sounds...");
-                        elapsed++;
-                    }
-                }
-
-            </script>
+            <script src="Scripts/mainmenu.js"></script>
             <table style="width: 100%">
                 <tr>
                     <td>
