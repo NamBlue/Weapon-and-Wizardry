@@ -98,7 +98,7 @@
                 <tr>
                     <td style="width: 100%" align="center">
                         <div class="row" style="margin-bottom:3%">
-                            <asp:Button ID="Button_Back" CssClass="image_button_back" runat="server" Style="" Text="No" OnClick="Button_Back_Click" />
+                            <asp:Button ID="Button_Back" CssClass="image_button_back" runat="server" Style="" Text="Back to game" OnClick="Button_Back_Click" />
                         </div>
                     </td>
                 </tr>
@@ -113,7 +113,7 @@
                     
                     <td style="width: 100%" align="center">
                         <div class="row" style="margin-bottom:3%">
-                            <asp:Button ID="Button_Quit" CssClass="image_button_load" runat="server" Style="" Text="Yes" OnClick="Button_Quit_Click" />
+                            <asp:Button ID="Button_Quit" CssClass="image_button_load" runat="server" Style="" Text="Quit Game" OnClick="Button_Quit_Click" />
                         </div>
                     </td>
                 </tr>
