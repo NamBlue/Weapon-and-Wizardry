@@ -19,6 +19,8 @@ This is a role play game.
   - C#
   - ASP.NET Webform
   - ADO.NET DAO
+  - Javascript
+  - SignalR
  
  
  
